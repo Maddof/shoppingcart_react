@@ -3,7 +3,7 @@ import CartContext from "./cartContext";
 import styles from "./cart.module.css";
 
 function UserCart() {
-  const { cart, removeFromCart } = useContext(CartContext);
+  const { cart, removeFromCart, totalQuantity } = useContext(CartContext);
 
   return (
     <div className={styles.cartWrapper}>
@@ -29,6 +29,7 @@ function UserCart() {
           ))}
         </ul>
       )}
+      <p>{totalQuantity}</p>
     </div>
   );
 }
