@@ -1,16 +1,14 @@
-import { Link } from "react-router-dom";
 import products from "../data/products";
+import ProductCard from "../components/card_shop/productcard";
 
 function ShopPage() {
   return (
     <>
       <h1>Shop Page</h1>
-      <ul>
+      <ul className="product-cards-list">
         {products.map((product) => (
-          <li key={product.id}>
-            <Link to={`/shop/${product.slug}`}>
-              {product.name} - ${product.price}
-            </Link>
+          <li key={product.id} className={"prod-" + product.id}>
+            <ProductCard product={product} />
           </li>
         ))}
       </ul>

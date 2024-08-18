@@ -6,7 +6,6 @@ header {
 
 .mainHeader {
     display: flex;
-    font-size: 20px;
     border: 2px solid #646cff;
     align-items: center;
 }
