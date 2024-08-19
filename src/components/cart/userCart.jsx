@@ -4,14 +4,8 @@ import styles from "./cart.module.css";
 import { Link } from "react-router-dom";
 
 function UserCart() {
-  const {
-    cart,
-    removeFromCart,
-    totalQuantity,
-    subtotal,
-    addToCart,
-    subtractItemFromCart,
-  } = useContext(CartContext);
+  const { cart, removeFromCart, subtotal, addToCart, subtractItemFromCart } =
+    useContext(CartContext);
 
   return (
     <div className={styles.cartWrapper}>

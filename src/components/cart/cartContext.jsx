@@ -1,3 +1,12 @@
+/*
+  The cart context is responsible for cart functionality and state management.
+  It gets exported and then imported in main.jsx to wrap everything.
+  Components or Pages that needs to use it use it with the useContext hook
+  together with destructuring of whatever the component/page needs.
+  So the atcbutton would need the addToCart function and user UserCart component
+  would need alot more.
+*/
+
 import React, { createContext, useState, useMemo } from "react";
 
 const CartContext = createContext();

@@ -17,13 +17,13 @@ function ProductPage() {
   return (
     <>
       <h1>Product Page</h1>
+      <Link to="/shop"> Return to shop</Link>
       <h2>{product.name}</h2>
       <img src={product.imgUrl} />
       <p>Price: {product.price}</p>
       <p>Id: {product.id}</p>
       <br />
       <AtcButtonShop product={product} />
-      <Link to="/shop"> Return to shop</Link>
     </>
   );
 }

@@ -1,3 +1,9 @@
+/*
+  The main render. Notice we have CartProvided that wraps everything.
+  This is so we can have the cart state global so we can use it
+  on every page without needing to pass props around.
+*/
+
 import React from "react";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
