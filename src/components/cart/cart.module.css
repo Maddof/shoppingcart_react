@@ -1,0 +1,54 @@
+.cartItemImg {
+    width: 100px;
+}
+
+.cartWrapper ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+}
+
+.cartWrapperActive {
+    display: flex;
+}
+
+.cartItem {
+    display: flex;
+    gap: 2em;
+}
+
+.cartItem div {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartItem div p:last-child {
+    margin: 0;
+}
+
+.cartItem div h3 {
+    margin: 0;
+}
+
+.cartWrapperActiveButton {
+    margin-left: auto;
+    gap: 1em;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.col2 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: auto;
+}
+
+.col2 h2{
+    margin: 0;
+}

@@ -1,0 +1,22 @@
+/* Styles for disabling increment/decrement controls */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.qtyInput {
+    width: 50px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.atcQtyWrapper {
+    display: flex;
+    gap: 0.4em;
+}
+
+.atcButton {
+    width: 100%;
+}

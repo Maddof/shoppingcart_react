@@ -20,7 +20,7 @@ const routes = [
         element: <ShopPage />,
       },
       {
-        path: "shop/:slug",
+        path: "shop/:slug", // Note: A unique URL parameter using the product slug for the product page. Slug should always be unique.
         element: <ProductPage />,
       },
       {

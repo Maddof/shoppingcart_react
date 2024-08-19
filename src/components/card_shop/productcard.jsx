@@ -1,10 +1,8 @@
 import styles from "./productcard.module.css";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import CartContext from "../cart/cartContext";
+import AtcButtonShop from "./atc_button/atcButton";
 
 function ProductCard({ product }) {
-  const { addToCart } = useContext(CartContext);
   return (
     <div className={styles.cardWrapper}>
       <Link to={`/shop/${product.slug}`}>
@@ -15,9 +13,7 @@ function ProductCard({ product }) {
           <h2>{product.name}</h2>
         </Link>
         <div className={styles.atcWrapper}>
-          <button onClick={() => addToCart(product)}>
-            ADD - ${product.price}
-          </button>
+          <AtcButtonShop product={product} />
         </div>
       </div>
     </div>
